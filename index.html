@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pswgen</title>
+  </head>
+  <body>
+    <div id="welcome"></div>
+
+    <script type="text/javascript">
+      var name = prompt('Inserisci il tuo nome');
+      var surname = prompt('Inserisci il tuo cognome');
+      var color = prompt('Inserisci il tuo colore preferito');
+
+      document.getElementById('welcome').innerHTML='Benvenuto <br><br>';
+
+      document.writeln('Riepilogo informazioni: <br>')
+      document.writeln('Nome: ' + name + '<br>');
+      document.writeln('Cognome: ' + surname + '<br>');
+      document.writeln('Colore preferito: ' + color + '<br><br>');
+
+      document.writeln('La tua password è: ' + name + surname + color + '19');
+    </script>
+  </body>
+</html>
